@@ -6,10 +6,12 @@ schematics are much more legible and easier to work with than the
 original scans.
 
 Want to check out what the original schematics look like?  Take a look
-at this great site, it contains copies of both the official Apple and
-the Bomarc reverse-engineered schematics.
+at this site for copies of Apple's original schematics.
 
-https://www.macintoshrepository.org/875-macintosh-se-30-schematics-and-repair
+https://museo.freaknet.org/gallery/apple/stuff/mac/andreas.kann/schemat.html
+
+For convenience, a script to download the files into your local
+working repo space is also included in this repository.
 
 ## Future Ideas
 
