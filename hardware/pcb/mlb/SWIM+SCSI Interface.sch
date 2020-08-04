@@ -3216,6 +3216,13 @@ Wire Wire Line
 	3550 4900 3450 4900
 Wire Wire Line
 	3250 8000 3350 8000
+Connection ~ 3550 8000
+Connection ~ 3350 8000
+Wire Wire Line
+	3350 8000 3450 8000
+Connection ~ 3450 8000
+Wire Wire Line
+	3450 8000 3550 8000
 Wire Bus Line
 	6700 2700 6700 2900
 Wire Bus Line
@@ -3224,11 +3231,4 @@ Wire Bus Line
 	6700 2000 6700 2500
 Wire Bus Line
 	1800 2500 1800 6800
-Connection ~ 3550 8000
-Connection ~ 3350 8000
-Wire Wire Line
-	3350 8000 3450 8000
-Connection ~ 3450 8000
-Wire Wire Line
-	3450 8000 3550 8000
 $EndSCHEMATC

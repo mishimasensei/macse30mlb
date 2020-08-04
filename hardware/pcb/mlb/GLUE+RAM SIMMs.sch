@@ -1952,7 +1952,7 @@ SCCWR*
 Text GLabel 5700 4650 2    50   Input ~ 0
 SCSIDACK*
 Text GLabel 5700 4750 2    50   Input ~ 0
-IDR*
+IOR*
 Text GLabel 5700 4950 2    50   Input ~ 0
 IOW*
 Text GLabel 5700 5050 2    50   Input ~ 0
