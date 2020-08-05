@@ -13,6 +13,9 @@ https://museo.freaknet.org/gallery/apple/stuff/mac/andreas.kann/schemat.html
 For convenience, a script to download the files into your local
 working repo space is also included in this repository.
 
+Follow this link to [jump to the SE/30 MLB PDF schematics
+directory.](hardware/pcb/mlb/output)
+
 ## Future Ideas
 
 What else can be done with this KiCad project?
