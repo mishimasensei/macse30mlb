@@ -1592,11 +1592,11 @@ X ~ 8 -350 0 146 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# Macintosh_SE_30_Components_PAL16L80
+# Macintosh_SE_30_Components_PAL16L8D
 #
-DEF Macintosh_SE_30_Components_PAL16L80 U 0 40 Y Y 1 F N
+DEF Macintosh_SE_30_Components_PAL16L8D U 0 40 Y Y 1 F N
 F0 "U" -350 650 50 H V L CNN
-F1 "Macintosh_SE_30_Components_PAL16L80" 50 650 50 H V L CNN
+F1 "Macintosh_SE_30_Components_PAL16L8D" 50 650 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST

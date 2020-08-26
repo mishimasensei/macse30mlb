@@ -825,7 +825,7 @@ Wire Notes Line
 Wire Notes Line
 	700  900  3150 900 
 Text Notes 700  1300 0    50   ~ 0
-1. All resistance values are in ohms, +/- 5%, 1/8 watt.\n2. All capacitance values are in microfarads.\n3. ( ) denotes sheet to sheet references.\n4. Cold & hot ground are connected together at two locations, near the RDB connectors and at the sound circuit.
+1. All resistance values are in ohms, +/- 5%, 1/8 watt.\n2. All capacitance values are in microfarads.\n3. ( ) denotes sheet to sheet references.\n4. Cold & hot ground are connected together at two locations, near the ADB connectors and at the sound circuit.
 Wire Wire Line
 	11550 2200 11550 3650
 Wire Wire Line
