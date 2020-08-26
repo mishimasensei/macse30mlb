@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Macintosh SE30 Main Logic Board-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -1421,7 +1422,7 @@ Wire Wire Line
 	7950 2300 8100 2300
 Connection ~ 7250 2650
 $Comp
-L Memory_EPROM:2764 UK6
+L Macintosh-SE30-Main-Logic-Board-rescue:2764-Memory_EPROM UK6
 U 1 1 5ED23C7D
 P 3650 6850
 F 0 "UK6" H 3650 7917 50  0000 C CNN
