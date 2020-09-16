@@ -1,4 +1,4 @@
-These are copies of the official Apple Macintosh SE/30 schematics.
+These are links to the official Apple Macintosh SE/30 schematics.
 
 Source website: https://museo.freaknet.org/gallery/apple/stuff/mac/andreas.kann/schemat.html
 
