@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Macintosh_SE_30_Components)(type Legacy)(uri "${KIPRJMOD}/SE30 Components Library/Macintosh_SE_30_Components.lib")(options "")(descr ""))
+  (lib (name Macintosh-SE30-Main-Logic-Board-rescue)(type Legacy)(uri "${KIPRJMOD}/Macintosh SE30 Main Logic Board-rescue.lib")(options "")(descr ""))
 )

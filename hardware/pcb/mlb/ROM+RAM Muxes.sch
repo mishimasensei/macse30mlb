@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Macintosh SE30 Main Logic Board-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
@@ -301,11 +302,11 @@ F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 11450 9350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Macintosh_SE_30_Components:PAL16L80 UH7
+L Macintosh_SE_30_Components:PAL16L8D UH7
 U 1 1 5EBDFEA4
 P 12750 7700
 F 0 "UH7" H 12700 7850 50  0000 C CNN
-F 1 "PAL16L80" H 12700 7750 50  0000 C CNN
+F 1 "PAL16L8D" H 12700 7750 50  0000 C CNN
 F 2 "" H 12750 7700 50  0001 C CNN
 F 3 "" H 12750 7700 50  0001 C CNN
 	1    12750 7700

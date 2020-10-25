@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Macintosh SE30 Main Logic Board-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -2122,4 +2123,18 @@ Text Notes 10690 4785 0    50   ~ 0
 (1)
 Text Notes 10630 4885 0    50   ~ 0
 (1)
+$Comp
+L power:GND #PWR?
+U 1 1 5F4D59A5
+P 5450 3600
+F 0 "#PWR?" H 5450 3350 50  0001 C CNN
+F 1 "GND" H 5455 3427 50  0001 C CNN
+F 2 "" H 5450 3600 50  0001 C CNN
+F 3 "" H 5450 3600 50  0001 C CNN
+	1    5450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3300 5450 3600
+Connection ~ 5450 3300
 $EndSCHEMATC

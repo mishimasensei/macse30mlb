@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Macintosh SE30 Main Logic Board-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
@@ -1203,7 +1204,7 @@ Wire Wire Line
 	11800 6750 11850 6750
 Connection ~ 11850 6750
 Wire Wire Line
-	11850 6750 11850 7300
+	11850 6750 11850 6950
 Wire Wire Line
 	11800 7300 11850 7300
 Connection ~ 11850 7300
@@ -1282,7 +1283,7 @@ F 3 "~" H 11750 8700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10850 8900 12000 8900
+	10850 8900 10900 8900
 Wire Wire Line
 	11900 8700 12000 8700
 Wire Wire Line
@@ -3637,10 +3638,6 @@ Entry Wire Line
 	2300 3800 2200 3900
 Wire Bus Line
 	2200 3200 1350 3200
-Wire Bus Line
-	2050 2900 2050 9200
-Wire Bus Line
-	2200 3200 2200 7900
 Text Notes 16195 735  0    50   ~ 0
 (8)
 Text Notes 16200 835  0    50   ~ 0
@@ -3713,4 +3710,20 @@ Text Notes 1010 835  2    50   ~ 0
 (8)
 Text Notes 1010 735  2    50   ~ 0
 (8)
+Wire Wire Line
+	10850 6950 11850 6950
+Connection ~ 11850 6950
+Wire Wire Line
+	11850 6950 11850 7300
+Wire Wire Line
+	10850 8400 10900 8400
+Wire Wire Line
+	10900 8400 10900 8900
+Wire Bus Line
+	2050 2900 2050 9200
+Wire Bus Line
+	2200 3200 2200 7900
+Connection ~ 10900 8900
+Wire Wire Line
+	10900 8900 12000 8900
 $EndSCHEMATC
