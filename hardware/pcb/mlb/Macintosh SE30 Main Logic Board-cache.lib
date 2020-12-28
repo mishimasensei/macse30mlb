@@ -1309,11 +1309,11 @@ X 9 9 -300 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Macintosh_SE_30_Components_DSC
+# Macintosh_SE_30_Components_OSC
 #
-DEF Macintosh_SE_30_Components_DSC UE 0 40 Y Y 1 F N
+DEF Macintosh_SE_30_Components_OSC UE 0 40 Y Y 1 F N
 F0 "UE" 0 -100 50 H V C CNN
-F1 "Macintosh_SE_30_Components_DSC" 0 -200 50 H V C CNN
+F1 "Macintosh_SE_30_Components_OSC" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
