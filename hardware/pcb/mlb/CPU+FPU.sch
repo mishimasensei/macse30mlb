@@ -72,11 +72,11 @@ CBACK*
 Text GLabel 1300 3750 0    50   Input ~ 0
 MMUDIS*
 Text Label 2050 4350 0    50   ~ 0
-IPL2*
+IPL*(2)
 Text Label 2050 4250 0    50   ~ 0
-IPL1*
+IPL*(1)
 Text Label 2050 4150 0    50   ~ 0
-IPL0*
+IPL*(0)
 Wire Wire Line
 	2000 4150 2450 4150
 Wire Wire Line
@@ -86,7 +86,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 3950 2450 3950
 Text GLabel 1300 2500 0    50   Input ~ 0
-DSACK(0:1)
+DSACK*(0:1)
 Text GLabel 1300 4850 0    50   Input ~ 0
 STERM*
 Wire Wire Line
@@ -802,9 +802,7 @@ F 3 "" H 11550 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11550 7050 11550 7450
-Wire Wire Line
-	11550 7050 12700 7050
+	11850 7050 12700 7050
 $Comp
 L power:GND #PWR?
 U 1 1 6053499D
@@ -968,8 +966,6 @@ Text Label 3900 4650 0    50   ~ 0
 DS*
 Text Label 3900 4950 0    50   ~ 0
 LBG*
-Text Label 3900 5150 0    50   ~ 0
-RW*
 Text Label 3900 5250 0    50   ~ 0
 A(0)
 Text Label 3900 5350 0    50   ~ 0
@@ -4614,8 +4610,6 @@ Text Notes 1020 3390 2    50   ~ 0
 (3,8)
 Text Notes 1040 3290 2    50   ~ 0
 (8)
-Text Notes 830  2540 2    50   ~ 0
-(3,5,8)
 Text Notes 1060 2390 2    50   ~ 0
 (8)
 Text Notes 950  2240 2    50   ~ 0
@@ -4628,6 +4622,12 @@ Text Notes 1050 1790 2    50   ~ 0
 (2)
 Text Notes 1120 1640 2    50   ~ 0
 (3,6,8)
+Text Notes 786  2541 2    50   ~ 0
+(3,5,8)
+Wire Wire Line
+	12700 7150 11550 7150
+Wire Wire Line
+	11550 7150 11550 7450
 Wire Bus Line
 	4500 2200 4500 4350
 Wire Bus Line
@@ -4644,4 +4644,6 @@ Wire Bus Line
 	1900 5350 1900 10250
 Wire Bus Line
 	4250 5350 4250 10000
+Text Label 3900 5150 0    50   ~ 0
+R-W*
 $EndSCHEMATC

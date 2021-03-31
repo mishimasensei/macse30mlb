@@ -328,17 +328,14 @@ Wire Wire Line
 Wire Wire Line
 	2000 2850 1000 2850
 Wire Wire Line
-	1000 2850 1000 4050
-Wire Wire Line
 	1000 9050 2000 9050
 Wire Wire Line
 	900  9150 2000 9150
-Connection ~ 1000 4050
 NoConn ~ 2000 2950
 NoConn ~ 2000 3050
 Wire Wire Line
 	2000 3850 1950 3850
-Text GLabel 800  3950 0    50   Input ~ 0
+Text GLabel 850  3950 0    50   Input ~ 0
 ROM*
 Wire Wire Line
 	1950 3850 1950 3950
@@ -771,7 +768,7 @@ Wire Wire Line
 	5950 8700 6650 8700
 Connection ~ 5950 6900
 Text Label 6300 2800 0    50   ~ 0
-RCMUX
+RCMUX*
 Wire Wire Line
 	6650 7100 6200 7100
 Wire Wire Line
@@ -805,7 +802,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 9550 6200 9550
 Text Label 6300 6900 0    50   ~ 0
-RCMUX
+RCMUX*
 Text Label 6300 7100 0    50   ~ 0
 A(11)
 Text Label 6300 7200 0    50   ~ 0
@@ -823,7 +820,7 @@ A(12)
 Text Label 6300 7850 0    50   ~ 0
 A(12)
 Text Label 6300 8700 0    50   ~ 0
-RCMUX
+RCMUX*
 Text Label 6300 8900 0    50   ~ 0
 A(15)
 Text Label 6300 9100 0    50   ~ 0
@@ -970,9 +967,9 @@ Connection ~ 9950 4600
 Text GLabel 15800 5750 2    50   Input ~ 0
 RCMUX*
 Text Label 10450 2800 0    50   ~ 0
-RCMUX
+RCMUX*
 Text Label 10450 4600 0    50   ~ 0
-RCMUX
+RCMUX*
 Text Label 10450 5550 0    50   ~ 0
 A(24)
 Wire Wire Line
@@ -993,37 +990,37 @@ Wire Wire Line
 Wire Wire Line
 	8600 7700 9050 7700
 Text Label 8650 3600 0    50   ~ 0
-RAAF(0)
+RAAF*(0)
 Text Label 8650 3800 0    50   ~ 0
-RAAF(1)
+RAAF*(1)
 Text Label 8650 4000 0    50   ~ 0
-RAAF(2)
+RAAF*(2)
 Text Label 8650 4200 0    50   ~ 0
-RAAF(3)
+RAAF*(3)
 Text Label 8650 7700 0    50   ~ 0
-RAAF(4)
+RAAF*(4)
 Text Label 8650 7900 0    50   ~ 0
-RAAF(5)
+RAAF*(5)
 Text Label 8650 8100 0    50   ~ 0
-RAAF(6)
+RAAF*(6)
 Text Label 8650 8300 0    50   ~ 0
-RAAF(7)
+RAAF*(7)
 Text Label 8650 3700 0    50   ~ 0
-RABF(0)
+RABF*(0)
 Text Label 8650 3900 0    50   ~ 0
-RABF(1)
+RABF*(1)
 Text Label 8650 4100 0    50   ~ 0
-RABF(2)
+RABF*(2)
 Text Label 8650 4300 0    50   ~ 0
-RABF(3)
+RABF*(3)
 Text Label 8650 7800 0    50   ~ 0
-RABF(4)
+RABF*(4)
 Text Label 8650 8000 0    50   ~ 0
-RABF(5)
+RABF*(5)
 Text Label 8650 8200 0    50   ~ 0
-RABF(6)
+RABF*(6)
 Text Label 8650 8400 0    50   ~ 0
-RABF(7)
+RABF*(7)
 Text GLabel 15800 1900 2    50   Input ~ 0
 RAAF*(0:11)
 Text GLabel 15800 2100 2    50   Input ~ 0
@@ -1135,21 +1132,21 @@ Wire Wire Line
 Wire Wire Line
 	12750 3600 13500 3600
 Text Label 12850 3600 0    50   ~ 0
-RAAF(8)
+RAAF*(8)
 Text Label 12850 3800 0    50   ~ 0
-RAAF(9)
+RAAF*(9)
 Text Label 12850 4000 0    50   ~ 0
-RAAF(10)
+RAAF*(10)
 Text Label 12850 4200 0    50   ~ 0
-RAAF(11)
+RAAF*(11)
 Text Label 12850 3700 0    50   ~ 0
-RABF(8)
+RABF*(8)
 Text Label 12850 3900 0    50   ~ 0
-RABF(9)
+RABF*(9)
 Text Label 12850 4100 0    50   ~ 0
-RABF(10)
+RABF*(10)
 Text Label 12850 4300 0    50   ~ 0
-RABF(11)
+RABF*(11)
 Text GLabel 15800 5900 2    50   Input ~ 0
 CASLL
 Text GLabel 15800 6200 2    50   Input ~ 0
@@ -1237,12 +1234,12 @@ $Comp
 L Device:L L15
 U 1 1 5FCCA01E
 P 10700 6650
-F 0 "L15" V 10519 6650 50  0000 C CNN
-F 1 "Ferrite Bead" V 10610 6650 50  0000 C CNN
+F 0 "L15" V 10900 6650 50  0000 C CNN
+F 1 "Ferrite Bead" V 10800 6650 50  0000 C CNN
 F 2 "" H 10700 6650 50  0001 C CNN
 F 3 "~" H 10700 6650 50  0001 C CNN
 	1    10700 6650
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	10850 6650 13550 6650
@@ -1395,9 +1392,9 @@ D(28)
 Text Label 1700 8950 0    50   ~ 0
 D(31)
 Entry Wire Line
-	1650 7450 1550 7550
+	1650 7450 1550 7350
 Entry Wire Line
-	1650 7550 1550 7650
+	1650 7550 1550 7450
 Entry Wire Line
 	1650 7650 1550 7550
 Entry Wire Line
@@ -1427,18 +1424,6 @@ Entry Wire Line
 Entry Wire Line
 	1650 8950 1550 8850
 Entry Wire Line
-	1650 5650 1550 5550
-Entry Wire Line
-	1650 5550 1550 5450
-Entry Wire Line
-	1650 5450 1550 5350
-Entry Wire Line
-	1650 5350 1550 5250
-Entry Wire Line
-	1650 5250 1550 5150
-Entry Wire Line
-	1650 5150 1550 5050
-Entry Wire Line
 	1650 5050 1550 4950
 Entry Wire Line
 	1650 4950 1550 4850
@@ -1452,11 +1437,6 @@ Entry Wire Line
 	1650 4550 1550 4450
 Entry Wire Line
 	1650 4450 1550 4350
-Entry Wire Line
-	1650 4350 1550 4250
-Wire Wire Line
-	1000 4050 1000 5750
-Connection ~ 1000 5750
 Entry Wire Line
 	3000 3050 2900 2950
 Entry Wire Line
@@ -1529,52 +1509,35 @@ Wire Bus Line
 Connection ~ 2900 2250
 Wire Bus Line
 	2900 2250 1550 2250
-Entry Wire Line
-	1450 3650 1350 3550
-Entry Wire Line
-	1450 3450 1350 3550
-Entry Wire Line
-	1450 3350 1350 3450
-Entry Wire Line
-	1450 3250 1350 3350
-Entry Wire Line
-	1450 3150 1350 3250
 Wire Wire Line
-	800  3950 1950 3950
+	850  3950 1950 3950
 Connection ~ 1950 3950
 Entry Wire Line
-	1450 5850 1350 5950
+	1450 5850 1350 5750
 Entry Wire Line
-	1450 5950 1350 6050
+	1450 5950 1350 5850
 Entry Wire Line
-	1450 6050 1350 6150
+	1450 6050 1350 5950
 Entry Wire Line
-	1450 6150 1350 6250
+	1450 6150 1350 6050
 Entry Wire Line
-	1450 6250 1350 6350
+	1450 6250 1350 6150
 Entry Wire Line
-	1450 6350 1350 6450
+	1450 6350 1350 6250
 Entry Wire Line
-	1450 6450 1350 6550
+	1450 6450 1350 6350
 Entry Wire Line
-	1450 6550 1350 6650
+	1450 6550 1350 6450
 Entry Wire Line
-	1450 6650 1350 6750
+	1450 6650 1350 6550
 Entry Wire Line
-	1450 6750 1350 6850
+	1450 6750 1350 6650
 Entry Wire Line
-	1450 6850 1350 6950
+	1450 6850 1350 6750
 Entry Wire Line
-	1450 6950 1350 7050
+	1450 6950 1350 6850
 Entry Wire Line
-	1450 7050 1350 7150
-Wire Wire Line
-	1000 5750 1000 7350
-Connection ~ 1000 7350
-Wire Wire Line
-	1000 7350 1000 9050
-Wire Wire Line
-	1000 5750 2000 5750
+	1450 7050 1350 6950
 Wire Bus Line
 	1350 9950 1150 9950
 Wire Bus Line
@@ -1641,7 +1604,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 3000 6200 3000
 Text Label 6300 4600 0    50   ~ 0
-RCMUX
+RCMUX*
 Text Label 6300 5550 0    50   ~ 0
 A(8)
 Text Label 6300 5450 0    50   ~ 0
@@ -1926,38 +1889,89 @@ Text Notes 820  9980 2    50   ~ 0
 (1,3-7)
 Text Notes 820  2280 2    50   ~ 0
 (1,3-7)
-Wire Wire Line
-	1000 4050 2000 4050
-Entry Wire Line
-	1650 4250 1550 4350
-Entry Wire Line
-	1650 4150 1550 4250
-Entry Wire Line
-	1450 7150 1350 7050
 Entry Wire Line
 	1450 7250 1350 7150
 Wire Wire Line
-	1000 7350 2000 7350
+	900  3750 2000 3750
+Text Notes 600  3984 2    50   ~ 0
+(3)
+Entry Wire Line
+	1450 3650 1350 3550
 Entry Wire Line
 	1450 3550 1350 3450
+Entry Wire Line
+	1450 3450 1350 3350
+Entry Wire Line
+	1450 3350 1350 3250
+Entry Wire Line
+	1450 3250 1350 3150
+Entry Wire Line
+	1450 3150 1350 3050
+Entry Wire Line
+	1650 4150 1550 4050
+Entry Wire Line
+	1650 5150 1550 5050
+Entry Wire Line
+	1650 5250 1550 5150
+Entry Wire Line
+	1650 5350 1550 5250
+Entry Wire Line
+	1650 5450 1550 5350
+Entry Wire Line
+	1650 5550 1550 5450
+Entry Wire Line
+	1650 5650 1550 5550
+Entry Wire Line
+	1650 4250 1550 4150
 Wire Wire Line
-	900  3750 900  9150
+	2000 4050 1700 4050
 Wire Wire Line
-	900  3750 2000 3750
+	1700 4050 1700 4000
+Entry Wire Line
+	1650 4350 1550 4250
+Wire Wire Line
+	1000 2850 1000 4000
+Wire Wire Line
+	2000 7350 1700 7350
+Wire Wire Line
+	1700 7350 1700 7300
+Wire Wire Line
+	1700 7300 1000 7300
+Connection ~ 1000 7300
+Wire Wire Line
+	1000 7300 1000 9050
+Wire Wire Line
+	1700 4000 1000 4000
+Connection ~ 1000 4000
+Wire Wire Line
+	1000 4000 1000 7300
+Wire Wire Line
+	900  3750 900  5700
+Wire Wire Line
+	2000 5750 1700 5750
+Wire Wire Line
+	1700 5750 1700 5700
+Wire Wire Line
+	1700 5700 900  5700
+Connection ~ 900  5700
+Wire Wire Line
+	900  5700 900  9150
+Entry Wire Line
+	1450 7150 1350 7050
 Wire Bus Line
 	13400 3300 13700 3300
 Wire Bus Line
 	14350 3300 14650 3300
 Wire Bus Line
-	9150 3350 9550 3350
-Wire Bus Line
 	9150 7450 9550 7450
+Wire Bus Line
+	9150 3350 9550 3350
 Wire Bus Line
 	9800 2100 9800 8300
 Wire Bus Line
-	10250 3100 10250 9950
+	1350 3050 1350 9950
 Wire Bus Line
-	1350 3250 1350 9950
+	10250 3100 10250 9950
 Wire Bus Line
 	4500 2250 4500 9050
 Wire Bus Line
