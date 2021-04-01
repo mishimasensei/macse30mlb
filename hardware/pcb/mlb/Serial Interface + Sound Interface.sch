@@ -18,6 +18,8 @@ $Comp
 L Macintosh_SE_30_Components:8530 UG12
 U 1 1 5EC30DA6
 P 3200 2450
+AR Path="/5EC30DA6" Ref="UG12"  Part="1" 
+AR Path="/5EC6E3D0/5EC30DA6" Ref="UG12"  Part="1" 
 F 0 "UG12" H 3200 2550 50  0000 C CNN
 F 1 "8530" H 3200 2450 50  0000 C CNN
 F 2 "" H 3200 2450 50  0001 C CNN
@@ -51,6 +53,8 @@ $Comp
 L Macintosh_SE_30_Components:75175 UB12
 U 1 1 5EC34042
 P 8850 2550
+AR Path="/5EC34042" Ref="UB12"  Part="1" 
+AR Path="/5EC6E3D0/5EC34042" Ref="UB12"  Part="1" 
 F 0 "UB12" H 8850 2650 50  0000 C CNN
 F 1 "75175" H 8850 2550 50  0000 C CNN
 F 2 "" H 8850 2550 50  0001 C CNN
@@ -62,6 +66,8 @@ $Comp
 L Macintosh_SE_30_Components:75175 UC12
 U 1 1 5EC340B3
 P 8850 4000
+AR Path="/5EC340B3" Ref="UC12"  Part="1" 
+AR Path="/5EC6E3D0/5EC340B3" Ref="UC12"  Part="1" 
 F 0 "UC12" H 8850 4100 50  0000 C CNN
 F 1 "75175" H 8850 4000 50  0000 C CNN
 F 2 "" H 8850 4000 50  0001 C CNN
@@ -961,11 +967,11 @@ SV2
 Wire Wire Line
 	4500 7500 4500 7900
 Wire Wire Line
-	4500 7900 8600 7900
+	4500 7900 8500 7900
 Wire Wire Line
-	8600 7900 8600 6550
+	8500 7900 8500 6550
 Wire Wire Line
-	8600 6550 9850 6550
+	8500 6550 9850 6550
 Text Label 9200 6550 0    50   ~ 0
 PWMA
 Wire Wire Line
@@ -1451,7 +1457,7 @@ Wire Wire Line
 	14050 7900 14050 8400
 Connection ~ 14050 8400
 Wire Wire Line
-	14050 8400 14350 8400
+	14050 8400 14150 8400
 $Comp
 L Macintosh_SE_30_Components:2N3906 Q2
 U 1 1 5EE6CD5D
@@ -1544,17 +1550,6 @@ F 2 "" H 15250 8850 50  0001 C CNN
 F 3 "" H 15250 8850 50  0001 C CNN
 	1    15250 8900
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:Speaker J11
-U 1 1 5F089CF2
-P 15800 8800
-F 0 "J11" H 15970 8796 50  0000 L CNN
-F 1 "Speaker" H 15970 8705 50  0000 L CNN
-F 2 "" H 15800 8600 50  0001 C CNN
-F 3 "~" H 15790 8750 50  0001 C CNN
-	1    15800 8800
-	1    0    0    -1  
 $EndComp
 Text Label 15150 8800 0    50   ~ 0
 SND-SPKR
@@ -1753,7 +1748,7 @@ HSKIA
 Text Label 11850 2250 0    50   ~ 0
 RXDA-
 Text Label 11850 2150 0    50   ~ 0
-RXDB+
+RXDA+
 Text Label 11850 2050 0    50   ~ 0
 GPIA
 Text Label 11850 1850 0    50   ~ 0
@@ -1761,7 +1756,7 @@ TXDA+
 Text Label 11850 1750 0    50   ~ 0
 TXDA-
 Text Label 11850 1650 0    50   ~ 0
-HSKDA
+HSKOA
 Text Label 9550 3000 0    50   ~ 0
 GPIA
 Text Label 9550 3100 0    50   ~ 0
@@ -1877,11 +1872,11 @@ Wire Wire Line
 Wire Wire Line
 	9650 5600 11600 5600
 Text Label 11900 3850 0    50   ~ 0
-HSKDB
+HSKOB
 Text Label 8250 5900 0    50   ~ 0
-HSKDA
+HSKOA
 Text Label 8250 6000 0    50   ~ 0
-HSKDB
+HSKOB
 Wire Wire Line
 	9900 800  1350 800 
 Wire Wire Line
@@ -1966,7 +1961,7 @@ F 3 "" H 15750 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 13200 1650 0    50   ~ 0
-HSXDAF
+HSKOAF
 Text Label 13200 1750 0    50   ~ 0
 TXDAF-
 Text Label 13200 1850 0    50   ~ 0
@@ -2083,11 +2078,11 @@ Connection ~ 15750 4250
 Wire Wire Line
 	15750 4250 15750 5150
 Text Label 13200 3850 0    50   ~ 0
-HSKDBF
+HSKOBF
 Text Label 13200 3950 0    50   ~ 0
 TXDBF-
 Text Label 13200 4050 0    50   ~ 0
-TCDBF+
+TXDBF+
 Text Label 13200 4250 0    50   ~ 0
 GPIBF
 Text Label 13200 4350 0    50   ~ 0
@@ -3719,11 +3714,142 @@ Wire Wire Line
 	10850 8400 10900 8400
 Wire Wire Line
 	10900 8400 10900 8900
+Connection ~ 10900 8900
+Wire Wire Line
+	10900 8900 12000 8900
+$Comp
+L power:-12V #PWR?
+U 1 1 606E34BB
+P 14150 8525
+F 0 "#PWR?" H 14150 8625 50  0001 C CNN
+F 1 "-12V" H 14165 8698 50  0000 C CNN
+F 2 "" H 14150 8525 50  0001 C CNN
+F 3 "" H 14150 8525 50  0001 C CNN
+	1    14150 8525
+	-1   0    0    1   
+$EndComp
+Connection ~ 14150 8400
+Wire Wire Line
+	14150 8400 14350 8400
+Wire Wire Line
+	14150 8525 14150 8400
+$Comp
+L Device:Speaker J11
+U 1 1 5F089CF2
+P 15800 8800
+F 0 "J11" H 15970 8796 50  0000 L CNN
+F 1 "Speaker Jack" H 15970 8705 50  0000 L CNN
+F 2 "" H 15800 8600 50  0001 C CNN
+F 3 "~" H 15790 8750 50  0001 C CNN
+	1    15800 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 6086FEE8
+P 7900 8700
+F 0 "R11" V 7800 8700 50  0000 C CNN
+F 1 "27" V 8000 8700 50  0000 C CNN
+F 2 "" V 7830 8700 50  0001 C CNN
+F 3 "~" H 7900 8700 50  0001 C CNN
+	1    7900 8700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 608F0E76
+P 7950 9300
+F 0 "C16" V 7800 9300 50  0000 C CNN
+F 1 "0.1" V 8100 9300 50  0000 C CNN
+F 2 "" H 7988 9150 50  0001 C CNN
+F 3 "~" H 7950 9300 50  0001 C CNN
+	1    7950 9300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609342BB
+P 6800 9700
+F 0 "#PWR?" H 6800 9450 50  0001 C CNN
+F 1 "GND" H 6805 9527 50  0000 C CNN
+F 2 "" H 6800 9700 50  0001 C CNN
+F 3 "" H 6800 9700 50  0001 C CNN
+	1    6800 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5G S1
+U 1 1 609B70E2
+P 7200 9000
+F 0 "S1" H 7200 9285 50  0000 C CNN
+F 1 "RESET (Normally Open)" H 7200 9194 50  0000 C CNN
+F 2 "" H 7200 9200 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 7200 9200 50  0001 C CNN
+	1    7200 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 609B8E47
+P 7500 8600
+F 0 "#PWR?" H 7500 8450 50  0001 C CNN
+F 1 "+5V" H 7515 8773 50  0000 C CNN
+F 2 "" H 7500 8600 50  0001 C CNN
+F 3 "" H 7500 8600 50  0001 C CNN
+	1    7500 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 8600 7500 8700
+Wire Wire Line
+	7500 8700 7750 8700
+Wire Wire Line
+	8100 9000 7400 9000
+Wire Wire Line
+	7000 9000 6800 9000
+Wire Wire Line
+	6800 9000 6800 9300
+Wire Wire Line
+	7800 9300 6800 9300
+Connection ~ 6800 9300
+Wire Wire Line
+	6800 9300 6800 9700
+Wire Wire Line
+	9850 9300 8600 9300
+Wire Wire Line
+	9850 7350 8600 7350
+Wire Wire Line
+	8600 7350 8600 8700
+Connection ~ 8600 9300
+Wire Wire Line
+	8600 9300 8100 9300
+Wire Wire Line
+	8400 9000 8600 9000
+Connection ~ 8600 9000
+Wire Wire Line
+	8600 9000 8600 9300
+Wire Wire Line
+	8050 8700 8600 8700
+Connection ~ 8600 8700
+Wire Wire Line
+	8600 8700 8600 9000
+$Comp
+L Device:R R5
+U 1 1 608B047C
+P 8250 9000
+F 0 "R5" V 8150 9000 50  0000 C CNN
+F 1 "100" V 8350 9000 50  0000 C CNN
+F 2 "" V 8180 9000 50  0001 C CNN
+F 3 "~" H 8250 9000 50  0001 C CNN
+	1    8250 9000
+	0    1    1    0   
+$EndComp
+Text Label 9400 7350 0    50   ~ 0
+SENSE
+Text Label 11050 9200 0    50   ~ 0
+TEST*
 Wire Bus Line
 	2050 2900 2050 9200
 Wire Bus Line
 	2200 3200 2200 7900
-Connection ~ 10900 8900
-Wire Wire Line
-	10900 8900 12000 8900
 $EndSCHEMATC

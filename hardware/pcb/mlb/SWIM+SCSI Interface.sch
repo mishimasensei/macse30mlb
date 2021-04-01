@@ -347,14 +347,14 @@ Wire Wire Line
 	12600 6850 12600 2700
 Connection ~ 12600 2700
 Text Label 14050 6850 0    50   ~ 0
-DBP
+DBP*
 Wire Wire Line
 	14600 6950 12450 6950
 Wire Wire Line
 	12450 6950 12450 1900
 Connection ~ 12450 1900
 Text Label 14050 6950 0    50   ~ 0
-DB0
+DB0*
 Wire Wire Line
 	14600 7050 12300 7050
 Wire Wire Line
@@ -363,14 +363,14 @@ Connection ~ 12300 2000
 Wire Wire Line
 	12300 2000 14500 2000
 Text Label 14050 7050 0    50   ~ 0
-DB1
+DB1*
 Wire Wire Line
 	14600 7250 12150 7250
 Wire Wire Line
 	12150 7250 12150 2100
 Connection ~ 12150 2100
 Text Label 14050 7250 0    50   ~ 0
-DB2
+DB2*
 Wire Wire Line
 	14600 7350 12000 7350
 Wire Wire Line
@@ -379,14 +379,14 @@ Connection ~ 12000 2200
 Wire Wire Line
 	12000 2200 14500 2200
 Text Label 14050 7350 0    50   ~ 0
-DB3
+DB3*
 Wire Wire Line
 	14600 7450 11850 7450
 Wire Wire Line
 	11850 7450 11850 2300
 Connection ~ 11850 2300
 Text Label 14050 7450 0    50   ~ 0
-DB4
+DB4*
 Wire Wire Line
 	14600 7550 11700 7550
 Wire Wire Line
@@ -395,12 +395,12 @@ Connection ~ 11700 2400
 Wire Wire Line
 	11700 2400 14500 2400
 Text Label 14050 7550 0    50   ~ 0
-DB5
+DB5*
 Wire Wire Line
 	11550 7750 11550 2500
 Connection ~ 11550 2500
 Text Label 14050 7750 0    50   ~ 0
-DB6
+DB6*
 Wire Wire Line
 	11400 7850 11400 3100
 Wire Wire Line
@@ -411,7 +411,7 @@ Wire Wire Line
 Text Label 14050 7850 0    50   ~ 0
 +5V-TERM
 Text Label 14050 7950 0    50   ~ 0
-DB7
+DB7*
 Wire Wire Line
 	8550 3400 13200 3400
 Wire Wire Line
@@ -1410,7 +1410,7 @@ F 3 "~" H 9800 9950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 7200 9400 9800
+	9400 7200 9400 9100
 Wire Wire Line
 	9800 9700 9800 9800
 Connection ~ 9800 9700
@@ -3100,21 +3100,19 @@ Wire Bus Line
 	1350 2700 1950 2700
 Connection ~ 1950 2700
 Entry Wire Line
-	6800 2600 6700 2500
+	6800 2500 6700 2400
 Entry Wire Line
-	6800 2500 6700 2600
+	6800 2400 6700 2300
 Entry Wire Line
-	6800 2400 6700 2500
+	6800 2300 6700 2200
 Entry Wire Line
-	6800 2300 6700 2400
+	6800 2200 6700 2100
 Entry Wire Line
-	6800 2200 6700 2300
+	6800 2100 6700 2000
 Entry Wire Line
-	6800 2100 6700 2200
+	6800 2000 6700 1900
 Entry Wire Line
-	6800 2000 6700 2100
-Entry Wire Line
-	6800 1900 6700 2000
+	6800 1900 6700 1800
 Entry Wire Line
 	1900 6900 1800 6800
 Entry Wire Line
@@ -3136,9 +3134,6 @@ Wire Bus Line
 Wire Bus Line
 	6700 2500 1800 2500
 Connection ~ 1800 2500
-Wire Bus Line
-	6700 2600 6700 2500
-Connection ~ 6700 2500
 Text Notes 910  2335 2    50   ~ 0
 (9)
 Text Notes 1010 2535 2    50   ~ 0
@@ -3224,12 +3219,48 @@ Wire Wire Line
 Connection ~ 3450 8000
 Wire Wire Line
 	3450 8000 3550 8000
+Text Label 4300 5400 0    50   ~ 0
+WR*
+$Comp
+L power:+12V #PWR?
+U 1 1 606738BC
+P 8800 6750
+F 0 "#PWR?" H 8800 6600 50  0001 C CNN
+F 1 "+12V" H 8815 6923 50  0000 C CNN
+F 2 "" H 8800 6750 50  0001 C CNN
+F 3 "" H 8800 6750 50  0001 C CNN
+	1    8800 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 6750 8800 6900
+Connection ~ 8800 6900
+Wire Wire Line
+	10400 9100 9400 9100
+Connection ~ 9400 9100
+Wire Wire Line
+	9400 9100 9400 9300
+Wire Wire Line
+	10400 9300 9400 9300
+Connection ~ 9400 9300
+Wire Wire Line
+	9400 9300 9400 9800
+Text Label 9850 9100 0    50   ~ 0
++12V-DSK
+Text Label 9850 9300 0    50   ~ 0
++12V-DSK
+Entry Wire Line
+	6800 2600 6700 2500
 Wire Bus Line
 	6700 2700 6700 2900
 Wire Bus Line
 	1950 2700 1950 5900
 Wire Bus Line
-	6700 2000 6700 2500
+	6700 1800 6700 2500
 Wire Bus Line
 	1800 2500 1800 6800
+Text Label 9850 9400 0    50   ~ 0
+RDDATA.F
+Text Label 9850 9600 0    50   ~ 0
+WRITE.F
 $EndSCHEMATC

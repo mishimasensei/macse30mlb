@@ -150,7 +150,7 @@ PWRIRQ*
 Text GLabel 1200 4250 0    50   Input ~ 0
 SCCIRQ*
 Text GLabel 1200 4350 0    50   Input ~ 0
-VIAIRQ2
+VIAIRQ2*
 Text GLabel 1200 4950 0    50   Input ~ 0
 C16G
 Text GLabel 1200 5050 0    50   Input ~ 0
@@ -1947,7 +1947,7 @@ TESTOE*
 Text GLabel 5700 4150 2    50   Input ~ 0
 SCCEN*
 Text GLabel 5700 4350 2    50   Input ~ 0
-SCCRD
+SCCRD*
 Text GLabel 5700 4450 2    50   Input ~ 0
 SCCWR*
 Text GLabel 5700 4650 2    50   Input ~ 0
@@ -2861,6 +2861,8 @@ $Comp
 L Macintosh_SE_30_Components:GLUE UI8
 U 1 1 5EBF6CFA
 P 2800 3100
+AR Path="/5EBF6CFA" Ref="UI8"  Part="1" 
+AR Path="/5EC6E1BF/5EBF6CFA" Ref="UI8"  Part="1" 
 F 0 "UI8" H 3000 3150 50  0000 C CNN
 F 1 "GLUE" H 3000 3050 50  0000 C CNN
 F 2 "" H 2800 3100 50  0001 C CNN
@@ -3135,7 +3137,7 @@ Text Notes 820  4185 2    50   ~ 0
 (8)
 Text Notes 830  4285 2    50   ~ 0
 (7,8)
-Text Notes 860  4385 2    50   ~ 0
+Text Notes 816  4384 2    50   ~ 0
 (4,8)
 Text Notes 805  4485 2    50   ~ 0
 (1)
@@ -3191,7 +3193,7 @@ Text Notes 6220 3885 0    50   ~ 0
 (1,5,8)
 Text Notes 6040 4185 0    50   ~ 0
 (7)
-Text Notes 6000 4385 0    50   ~ 0
+Text Notes 6048 4380 0    50   ~ 0
 (7)
 Text Notes 6050 4485 0    50   ~ 0
 (7)

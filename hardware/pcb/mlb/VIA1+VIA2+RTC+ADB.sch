@@ -95,6 +95,8 @@ $Comp
 L Macintosh_SE_30_Components:ADB UL11
 U 1 1 5EC1CBCA
 P 7500 5350
+AR Path="/5EC1CBCA" Ref="UL11"  Part="1" 
+AR Path="/5EC6E211/5EC1CBCA" Ref="UL11"  Part="1" 
 F 0 "UL11" H 7650 5400 50  0000 C CNN
 F 1 "ADB" H 7650 5300 50  0000 C CNN
 F 2 "" H 7500 5350 118 0001 C CNN
@@ -199,12 +201,6 @@ F 3 "" H 11550 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 15950 -700
-Wire Wire Line
-	4300 1150 15800 1150
-Wire Wire Line
-	4300 1250 15800 1250
-Wire Wire Line
-	4300 1350 15800 1350
 Wire Wire Line
 	4300 1450 15800 1450
 Wire Wire Line
@@ -585,7 +581,7 @@ F 3 "" H 9350 3650 118 0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8500 4250 0    50   ~ 0
-RTC-O
+RTC-D
 Text Label 8500 4350 0    50   ~ 0
 RTC-CLK
 Text Label 8500 4450 0    50   ~ 0
@@ -749,7 +745,7 @@ Connection ~ 10700 6250
 Wire Wire Line
 	10700 6250 10900 6250
 Text Label 10750 5400 0    50   ~ 0
-ADB0
+ADBO
 Wire Wire Line
 	11150 5600 10900 5600
 Wire Wire Line
@@ -809,11 +805,11 @@ RTC-1HZ
 Text Notes 14800 3900 0    50   ~ 0
 3.0V, 1/2AA
 Text Label 4350 1150 0    50   ~ 0
-VIPA0
+V1PA0
 Text Label 4350 1250 0    50   ~ 0
-VIPA1
+V1PA1
 Text Label 4350 1350 0    50   ~ 0
-VIPA2
+V1PA2
 Text Label 4350 1450 0    50   ~ 0
 SYNC
 Text Label 4350 1550 0    50   ~ 0
@@ -825,7 +821,7 @@ ALTVID
 Text Label 4350 1850 0    50   ~ 0
 SCCWREQ*
 Text Label 4350 2050 0    50   ~ 0
-RTC-O
+RTC-D
 Text Label 4350 2150 0    50   ~ 0
 RTC-CLK
 Text Label 4350 2250 0    50   ~ 0
@@ -839,15 +835,9 @@ ADB-ST1
 Text Label 4350 2650 0    50   ~ 0
 VSYNCEN*
 Text Label 4350 2750 0    50   ~ 0
-VIPB7
+V1PB7
 Text Label 4350 2950 0    50   ~ 0
 VIAIRQ1*
-Text GLabel 15800 1150 2    50   Input ~ 0
-VIPA0
-Text GLabel 15800 1250 2    50   Input ~ 0
-VIPA1
-Text GLabel 15800 1350 2    50   Input ~ 0
-VIPA2
 Text GLabel 15800 1450 2    50   Input ~ 0
 SYNC
 Text GLabel 15800 1550 2    50   Input ~ 0
@@ -867,7 +857,7 @@ ADB-ST1
 Text GLabel 15800 2650 2    50   Input ~ 0
 VSYNCEN*
 Text GLabel 15800 2750 2    50   Input ~ 0
-VIPB7
+V1PB7
 Wire Wire Line
 	3300 3450 2900 3450
 Wire Wire Line
@@ -1167,7 +1157,7 @@ SLOTIRQ*
 Text GLabel 1400 9450 0    50   Input ~ 0
 SCSIDRQ
 Text GLabel 1400 9550 0    50   Input ~ 0
-SNTINT*
+SNDINT*
 Text GLabel 1400 9650 0    50   Input ~ 0
 SCSIIRQ
 Text Notes 3650 800  0    98   ~ 0
@@ -2447,12 +2437,6 @@ Wire Bus Line
 	5350 8150 15800 8150
 Wire Bus Line
 	5350 7950 15800 7950
-Wire Bus Line
-	2300 1000 2300 7550
-Wire Bus Line
-	5350 7450 5350 7950
-Wire Bus Line
-	2450 1750 2450 8650
 Text Notes 1070 1035 2    50   ~ 0
 (1-3,5-7)
 Text Notes 1140 2585 2    50   ~ 0
@@ -2481,16 +2465,10 @@ Text Notes 1000 9385 2    50   ~ 0
 (3)
 Text Notes 1025 9485 2    50   ~ 0
 (3)
-Text Notes 1055 9585 2    50   ~ 0
+Text Notes 1042 9586 2    50   ~ 0
 (7)
 Text Notes 1050 9685 2    50   ~ 0
 (6)
-Text Notes 16065 1180 0    50   ~ 0
-(8,9)
-Text Notes 16065 1280 0    50   ~ 0
-(8,9)
-Text Notes 16065 1380 0    50   ~ 0
-(8,9)
 Text Notes 16060 1480 0    50   ~ 0
 (3)
 Text Notes 16170 1580 0    50   ~ 0
@@ -2509,7 +2487,7 @@ Text Notes 16195 2585 0    50   ~ 0
 (9)
 Text Notes 16225 2685 0    50   ~ 0
 (1)
-Text Notes 16065 2785 0    50   ~ 0
+Text Notes 16095 2781 0    50   ~ 0
 (9)
 Text GLabel 15800 2950 2    50   Input ~ 0
 VIAIRQ1*
@@ -2535,4 +2513,30 @@ Text Notes 16045 8785 0    50   ~ 0
 (1)
 Text Notes 16175 9185 0    50   ~ 0
 (3)
+Wire Wire Line
+	4300 1350 15800 1350
+Wire Wire Line
+	4300 1250 15800 1250
+Wire Wire Line
+	4300 1150 15800 1150
+Text Notes 16090 1180 0    50   ~ 0
+(8,9)
+Text Notes 16090 1280 0    50   ~ 0
+(8,9)
+Text Notes 16090 1380 0    50   ~ 0
+(8,9)
+Text GLabel 15800 1350 2    50   Input ~ 0
+V1PA2
+Text GLabel 15800 1250 2    50   Input ~ 0
+V1PA1
+Text GLabel 15800 1150 2    50   Input ~ 0
+V1PA0
+Wire Bus Line
+	2300 1000 2300 7550
+Wire Bus Line
+	5350 7450 5350 7950
+Wire Bus Line
+	2450 1750 2450 8650
+Text Label 13900 3650 0    50   ~ 0
+BATT
 $EndSCHEMATC

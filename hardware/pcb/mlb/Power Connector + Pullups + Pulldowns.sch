@@ -510,7 +510,7 @@ Wire Wire Line
 Text Label 7300 2850 0    50   ~ 0
 R-W*
 Text GLabel 7200 2850 0    50   Input ~ 0
-R-W
+R-W*
 Wire Wire Line
 	8250 2950 7200 2950
 Text Label 7300 2950 0    50   ~ 0
@@ -642,19 +642,17 @@ Wire Wire Line
 Text Label 10300 4750 2    50   ~ 0
 STERM*
 Text GLabel 10400 4750 2    50   Input ~ 0
-STERM
+STERM*
 Wire Wire Line
 	9350 4650 10400 4650
 Text Label 10300 4650 2    50   ~ 0
 CBACK*
 Text GLabel 10400 4650 2    50   Input ~ 0
-CBACK
+CBACK*
 Wire Wire Line
 	9350 4550 10400 4550
 Text Label 10300 4550 2    50   ~ 0
 LBGACK*
-Text GLabel 10400 4550 2    50   Input ~ 0
-LBGACK
 Wire Wire Line
 	9350 4450 10400 4450
 Text Label 10300 4450 2    50   ~ 0
@@ -793,11 +791,11 @@ RXDAT+
 Text GLabel 2100 6900 0    50   Input ~ 0
 RXDAT-
 Text GLabel 2100 7000 0    50   Input ~ 0
-VIPAG
+V1PA0
 Text GLabel 2100 7100 0    50   Input ~ 0
-VIPA1
+V1PA1
 Text GLabel 2100 7200 0    50   Input ~ 0
-VIPA2
+V1PA2
 Wire Wire Line
 	5600 8000 5400 8000
 Wire Wire Line
@@ -1068,17 +1066,6 @@ F 3 "" H 6600 8250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+12V #PWR?
-U 1 1 5F8BC6F1
-P 6200 8250
-F 0 "#PWR?" H 6200 8100 50  0001 C CNN
-F 1 "+12V" H 6215 8423 50  0000 C CNN
-F 2 "" H 6200 8250 50  0001 C CNN
-F 3 "" H 6200 8250 50  0001 C CNN
-	1    6200 8250
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C C18-19
 U 1 1 5F8EE69A
 P 12300 1600
@@ -1194,12 +1181,12 @@ F 3 "" H 13800 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 13850 1850 0    50   ~ 0
-REPEAT-3
+REPEAT-2
 $Comp
-L Device:C C219
+L Device:C C29
 U 1 1 5F92D6F5
 P 14550 1600
-F 0 "C219" H 14665 1646 50  0000 L CNN
+F 0 "C29" H 14665 1646 50  0000 L CNN
 F 1 "0.1" H 14665 1555 50  0000 L CNN
 F 2 "" H 14588 1450 50  0001 C CNN
 F 3 "~" H 14550 1600 50  0001 C CNN
@@ -1769,7 +1756,7 @@ L Device:C C20
 U 1 1 5FA696F4
 P 12300 6000
 F 0 "C20" H 12415 6046 50  0000 L CNN
-F 1 "0.1" H 12415 5955 50  0000 L CNN
+F 1 "0.01" H 12415 5955 50  0000 L CNN
 F 2 "" H 12338 5850 50  0001 C CNN
 F 3 "~" H 12300 6000 50  0001 C CNN
 	1    12300 6000
@@ -1806,7 +1793,7 @@ L Device:C C38
 U 1 1 5FA69715
 P 13050 6000
 F 0 "C38" H 13165 6046 50  0000 L CNN
-F 1 "0.1" H 13165 5955 50  0000 L CNN
+F 1 "0.01" H 13165 5955 50  0000 L CNN
 F 2 "" H 13088 5850 50  0001 C CNN
 F 3 "~" H 13050 6000 50  0001 C CNN
 	1    13050 6000
@@ -1843,7 +1830,7 @@ L Device:C C57-59
 U 1 1 5FA69735
 P 13800 6000
 F 0 "C57-59" H 13915 6046 50  0000 L CNN
-F 1 "0.1" H 13915 5955 50  0000 L CNN
+F 1 "0.01" H 13915 5955 50  0000 L CNN
 F 2 "" H 13838 5850 50  0001 C CNN
 F 3 "~" H 13800 6000 50  0001 C CNN
 	1    13800 6000
@@ -1880,7 +1867,7 @@ L Device:C C62
 U 1 1 5FA69755
 P 14550 6000
 F 0 "C62" H 14665 6046 50  0000 L CNN
-F 1 "0.1" H 14665 5955 50  0000 L CNN
+F 1 "0.01" H 14665 5955 50  0000 L CNN
 F 2 "" H 14588 5850 50  0001 C CNN
 F 3 "~" H 14550 6000 50  0001 C CNN
 	1    14550 6000
@@ -1917,7 +1904,7 @@ L Device:C C64-65
 U 1 1 5FA69775
 P 15300 6000
 F 0 "C64-65" H 15415 6046 50  0000 L CNN
-F 1 "0.1" H 15415 5955 50  0000 L CNN
+F 1 "0.01" H 15415 5955 50  0000 L CNN
 F 2 "" H 15338 5850 50  0001 C CNN
 F 3 "~" H 15300 6000 50  0001 C CNN
 	1    15300 6000
@@ -2047,11 +2034,11 @@ Text Notes 1755 6835 2    50   ~ 0
 (7)
 Text Notes 1755 6935 2    50   ~ 0
 (7)
-Text Notes 1835 7035 2    50   ~ 0
+Text Notes 1810 7035 2    50   ~ 0
 (4,9)
-Text Notes 1835 7130 2    50   ~ 0
+Text Notes 1810 7130 2    50   ~ 0
 (4,9)
-Text Notes 1840 7235 2    50   ~ 0
+Text Notes 1815 7235 2    50   ~ 0
 (4,9)
 Text Notes 6995 1185 2    50   ~ 0
 (5)
@@ -2063,7 +2050,7 @@ Text Notes 7015 2685 2    50   ~ 0
 (1,3,6)
 Text Notes 6880 2785 2    50   ~ 0
 (1,4,6,7)
-Text Notes 6975 2885 2    50   ~ 0
+Text Notes 6933 2884 2    50   ~ 0
 (1-5,7)
 Text Notes 6750 2985 2    50   ~ 0
 (1,3,5)
@@ -2115,11 +2102,11 @@ Text Notes 10770 4385 0    50   ~ 0
 (3)
 Text Notes 10585 4485 0    50   ~ 0
 (1,3)
-Text Notes 10735 4580 0    50   ~ 0
+Text Notes 10785 4580 0    50   ~ 0
 (1)
-Text Notes 10695 4685 0    50   ~ 0
+Text Notes 10745 4685 0    50   ~ 0
 (1)
-Text Notes 10690 4785 0    50   ~ 0
+Text Notes 10740 4785 0    50   ~ 0
 (1)
 Text Notes 10630 4885 0    50   ~ 0
 (1)
@@ -2137,4 +2124,31 @@ $EndComp
 Wire Wire Line
 	5450 3300 5450 3600
 Connection ~ 5450 3300
+Text Label 6600 6600 0    50   ~ 0
+TXDAT+
+Text Label 6600 6700 0    50   ~ 0
+TXDAT-
+Text Label 6600 6800 0    50   ~ 0
+RXDAT+
+Text Label 6600 6900 0    50   ~ 0
+RXDAT-
+Text Label 6600 7000 0    50   ~ 0
+V1PA0
+Text Label 6600 7100 0    50   ~ 0
+V1PA1
+Text Label 6600 7200 0    50   ~ 0
+V1PA2
+$Comp
+L power:-12V #PWR?
+U 1 1 607DCB16
+P 6200 8250
+F 0 "#PWR?" H 6200 8350 50  0001 C CNN
+F 1 "-12V" H 6215 8423 50  0000 C CNN
+F 2 "" H 6200 8250 50  0001 C CNN
+F 3 "" H 6200 8250 50  0001 C CNN
+	1    6200 8250
+	-1   0    0    1   
+$EndComp
+Text GLabel 10400 4550 2    50   Input ~ 0
+LBGACK*
 $EndSCHEMATC
