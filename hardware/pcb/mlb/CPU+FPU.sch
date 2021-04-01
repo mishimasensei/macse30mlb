@@ -873,9 +873,9 @@ Connection ~ 14650 2200
 Wire Wire Line
 	14650 2200 15800 2200
 Text Label 2050 4550 0    50   ~ 0
-DSACK(0)*
+DSACK*(0)
 Text Label 2050 4650 0    50   ~ 0
-DSACK(1)*
+DSACK*(1)
 Text Label 2050 4750 0    50   ~ 0
 STERM*
 Text Label 2050 4950 0    50   ~ 0
@@ -4628,6 +4628,8 @@ Wire Wire Line
 	12700 7150 11550 7150
 Wire Wire Line
 	11550 7150 11550 7450
+Text Label 3900 5150 0    50   ~ 0
+R-W*
 Wire Bus Line
 	4500 2200 4500 4350
 Wire Bus Line
@@ -4644,6 +4646,4 @@ Wire Bus Line
 	1900 5350 1900 10250
 Wire Bus Line
 	4250 5350 4250 10000
-Text Label 3900 5150 0    50   ~ 0
-R-W*
 $EndSCHEMATC

@@ -708,7 +708,7 @@ Wire Wire Line
 	8800 5700 8750 5700
 Connection ~ 6950 5700
 Wire Wire Line
-	8750 5700 8750 5250
+	8750 5700 8750 5600
 Wire Wire Line
 	8750 5250 9950 5250
 Connection ~ 8750 5700
@@ -1879,6 +1879,14 @@ Wire Wire Line
 	9700 7750 10200 7750
 Wire Wire Line
 	10200 7750 10200 6800
+Text Label 8250 8500 0    50   ~ 0
+ALTVID
+Wire Wire Line
+	5950 5600 5950 5700
+Connection ~ 5950 5600
+Connection ~ 5950 5700
+Wire Wire Line
+	8800 5600 8750 5600
 Wire Wire Line
 	7950 8500 8800 8500
 Wire Bus Line
@@ -1897,6 +1905,7 @@ Wire Bus Line
 	2450 3900 2450 5200
 Wire Bus Line
 	2450 5200 2450 7350
-Text Label 8250 8500 0    50   ~ 0
-ALTVID
+Connection ~ 8750 5600
+Wire Wire Line
+	8750 5600 8750 5250
 $EndSCHEMATC
